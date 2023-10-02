@@ -1,0 +1,47 @@
+@@include('common/html/html-before.html', { title: 'Home' })
+<main class="main">
+  <section class="overview container">
+    <img
+      src="/assets/images/overview-01.png"
+      alt="opss..."
+      class="overview__image"
+    />
+    <div>
+      <h1 class="overview__title">
+        Take your podcast to the
+        <span class="overview__title--underline">next</span>
+        <span class="overview__title--bold">level</span>
+      </h1>
+      <div class="overview__listen-on">
+        <p class="overview__text">Listen on</p>
+        <ol class="overview__services">
+          <li class="overview__service">
+            <img class="service" src="/assets/images/spotify.svg" alt="opss..." />
+          </li>
+          <li class="overview__service">
+            <img class="service" src="/assets/images/pocket-casts.svg" alt="opss..." />
+          </li>
+          <li class="overview__service">
+            <img class="service" src="/assets/images/soundcloud.svg" alt="opss..." />
+          </li>
+          <li class="overview__service">
+            <img class="service" src="/assets/images/apple-podcasts.svg" alt="opss..." />
+          </li>
+          <li class="overview__service">
+            <img class="service" src="/assets/images/overcast.svg" alt="opss..." />
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-episodes container">
+    <div class="latest-episodes__head">
+      <h1 class="latest-episodes__title">Latest episodes</h1>
+      <a href="/episodes" class="latest-episodes__button button">View all episodes</a>
+    </div>
+    @@loop('common/html/latest-episodes__episode.html',
+    '../assets/files/episodes.json')
+  </section>
+</main>
+@@include('common/html/html-after.html')

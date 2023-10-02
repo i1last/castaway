@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  padding: 43px 50px 43px 50px;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

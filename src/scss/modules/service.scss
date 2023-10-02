@@ -1,0 +1,8 @@
+.service {
+  cursor: pointer;
+  transition: 300ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

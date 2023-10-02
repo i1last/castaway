@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 70px 100px 70px;
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__socials {
+    display: flex;
+  }
+  &__social {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__services {
+    display: flex;
+  }
+  &__service {
+    margin-right: 17px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.latest-episodes {
+  margin-bottom: 260px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 66px;
+  }
+  &__title {
+    font-size: 64px;
+    line-height: 124%;
+    letter-spacing: 2.88px;
+  }
+  &__button {
+    display: block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 159%;
+    background-color: var(--color-accent);
+    color: var(--color-text);
+  }
+}

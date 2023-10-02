@@ -1,0 +1,37 @@
+.overview {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+
+  &__image {
+    margin-right: 60px;
+    width: 650px;
+  }
+  &__title {
+    font-size: 70px;
+    letter-spacing: 3.2px;
+    width: 526px;
+    margin-bottom: 90px;
+
+    &--underline {
+      background-image: url("/assets/images/overview-02.svg");
+      background-repeat: no-repeat;
+    }
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  &__text {
+    margin-bottom: 16px;
+  }
+  &__services {
+    display: flex;
+  }
+  &__service {
+    margin-right: 17px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
